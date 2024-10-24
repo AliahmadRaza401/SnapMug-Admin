@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="snapmug_for_admins">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>snapmug_for_admins</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script type="text/javascript">
+    window.flutterWebRenderer = "html";
+  </script>
+</head>
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="main.dart.js" type="application/javascript"></script>
+<script src="flutter_bootstrap.js" async></script>
+
+
+<!-- Firebase Configuration -->
+<script>
+  var firebaseConfig = {
+       apiKey: "AIzaSyB8fudufdb81EmsK-XLAuzeTf57b5d9LEA",
+       authDomain: "snapmugflutter.firebaseapp.com",
+       databaseURL: "https://snapmugflutter-default-rtdb.firebaseio.com",
+       projectId: "snapmugflutter",
+       storageBucket: "snapmugflutter.appspot.com",
+       messagingSenderId: "534586490308",
+       appId: "1:534586490308:web:34855af66e8f09953d7891",
+       measurementId: "G-45DKZST0LV"
+  };
+
+ const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+
+</body>
+</html>
